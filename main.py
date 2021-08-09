@@ -1,10 +1,12 @@
 import pygame
 
 from settings import Settings
+from ball import Ball
 
 class Main:
     def __init__(self):
         self.__settings = Settings()
+        self.__ball = Ball()
         #self.box = Box class initialised here
         #self.rod = Rod class initialised here
         self.WIN = pygame.display.set_mode((self.__settings.SIZE), 0, 32)
