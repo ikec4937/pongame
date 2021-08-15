@@ -2,7 +2,7 @@ import pygame
 
 from settings import Settings
 
-class Box:
+class Ball:
     def __init__(self, main, x, y, radius):
         self.main = main
         self.__settings = Settings()
