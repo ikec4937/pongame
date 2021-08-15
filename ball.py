@@ -7,7 +7,7 @@ class Ball:
         self.main = main
         self.__settings = Settings()
         
-        #Box Properties
+        #Ball Properties
         self.x = x
         self.y = y
         self.radius = radius

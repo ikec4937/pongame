@@ -1,0 +1,7 @@
+===TO-DO===
+IMPORTANT!
+- Implement rod class (might want to use old box class or something)
+- Make the rod class move
+
+AND ALSO...
+- I might want to rename the colour variables

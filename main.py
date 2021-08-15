@@ -6,7 +6,7 @@ from ball import Ball
 class Main:
     def __init__(self):
         self.__settings = Settings()
-        self.__ball = Ball()
+        self.__ball = Ball(self, self.__settings.DISP_W/2, self.__settings.DISP_H/2, 12)
         #self.box = Box class initialised here
         #self.rod = Rod class initialised here
         self.WIN = pygame.display.set_mode((self.__settings.SIZE), 0, 32)
@@ -29,6 +29,7 @@ class Main:
 
     def _update_display(self):
         self.WIN.fill(self.__settings.background)
+        self.__ball.draw()
         pygame.display.update()
 
 if __name__ == "__main__":
