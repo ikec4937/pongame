@@ -11,7 +11,6 @@ class Ball:
         self.x = x
         self.y = y
         self.radius = radius
-        self.colour = self.__settings.player_box_colour
 
         #Velocity
         self.velocity = 4
@@ -23,8 +22,8 @@ class Ball:
         #Bools?
         self.out_of_bounds = True
     
-    def draw(self):
-        pygame.draw.circle(self.main.WIN, self.colour, (self.x, self.y), (self.radius))
+    def draw(self, colour):
+        pygame.draw.circle(self.main.WIN, colour, (self.x, self.y), (self.radius))
     
     def move_x(self):
         if self.x_direction == 1: 

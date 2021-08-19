@@ -17,11 +17,13 @@ class Settings:
         self.p2_down = pygame.K_DOWN
 
         #Colour configurations
-        self.player_box_colour = self.__colours.red
-        self.random_box_colour = self.__colours.gold
-        self.follow_box_colour = self.__colours.blue
-        self.grid_colour = self.__colours.grey
+        self.in_ball_colour = self.__colours.red
+        self.out_ball_colour = self.__colours.black
+        self.rod_colour = self.__colours.grey
         self.background = self.__colours.white
+        self.winning_text_colour = self.__colours.gold
+        self.losing_text_colour = self.__colours.blue
+        self.regular_text_colour = self.__colours.black
         
 
         #Frame rate
