@@ -13,14 +13,16 @@ class Rod:
         self.width = width
         self.height = height
 
-        self.mov_sp = 2 #mov_sp = movement speed
+        self.mov_sp = 4 #mov_sp = movement speed
 
     def draw(self, colour):
         self.rect = pygame.Rect(self.x, self.y, self.width, self.height)
         pygame.draw.rect(self.main.WIN, colour, self.rect)
     
     def move_up(self):
-        self.y -= self.mov_sp
+        if self.y > 0:
+            self.y -= self.mov_sp
     
     def move_down(self):
-        self.y += self.mov_sp
+        if self.y < (self.__settings.DISP_H - self.height):
+            self.y += self.mov_sp

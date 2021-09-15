@@ -1,7 +1,7 @@
 ===TO-DO===
 IMPORTANT!
-- Implement rod class (might want to use old box class or something)
-- Make the rod class move
+- Made the ball interact with the rods somehow
 
 AND ALSO...
 - I might want to rename the colour variables
+- I might really like to reorganise everything in the settings class. Ideally into different files.

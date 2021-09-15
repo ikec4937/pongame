@@ -27,7 +27,18 @@ class Main:
                 quit()
     
     def _look_for_inputs(self):
-        pass
+        keys = pygame.key.get_pressed()
+        #Player 1 Movement
+        if keys[self.__settings.p1_up]:
+            self.__rod_p1.move_up()
+        if keys[self.__settings.p1_down]:
+            self.__rod_p1.move_down()
+        
+        #Player 2 movement
+        if keys[self.__settings.p2_up]:
+            self.__rod_p2.move_up()
+        if keys[self.__settings.p2_down]:
+            self.__rod_p2.move_down()
 
     def _update_display(self):
         self.WIN.fill(self.__settings.background)
