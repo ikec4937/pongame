@@ -9,12 +9,15 @@ class Settings:
         #Display Settings
         self.DISP_W, self.DISP_H = 720, 480
         self.SIZE = self.DISP_W, self.DISP_H
+        self.C_WIDTH, self.C_HEIGHT = self.DISP_W/2, self.DISP_H/2
+        self.CENTRE = self.C_WIDTH, self.C_HEIGHT
 
         #Input buttons
         self.p1_up = pygame.K_w
         self.p1_down = pygame.K_s
         self.p2_up = pygame.K_UP
         self.p2_down = pygame.K_DOWN
+        self.start_key = pygame.K_SPACE
 
         #Colour configurations
         self.in_ball_colour = self.__colours.red
